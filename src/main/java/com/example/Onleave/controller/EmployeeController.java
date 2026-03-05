@@ -18,6 +18,8 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
 
+    // POST /api/employees
+    // Body: {"firstName":"John","lastName":"Doe","email":"john.doe@example.com","department":"IT"}
     @PostMapping
     public ResponseEntity<Employee> save(@RequestBody Employee employee) {
         return ResponseEntity.ok(employeeService.saveEmployee(employee));
@@ -40,6 +42,7 @@ public class EmployeeController {
         return ResponseEntity.ok(employeeService.getEmployeesByProvince(code, name));
     }
 
+    // GET /api/employees/1
     @GetMapping("/{id}")
     public ResponseEntity<Employee> getById(@PathVariable Long id) {
         return ResponseEntity.ok(employeeService.getById(id));
