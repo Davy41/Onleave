@@ -1,6 +1,7 @@
 # Staff Leave & HR Request Management System
 
-**Student:** Patrick DUSHIMIMANA
+**Student:** Ibambasi Ganza Pierre Davy
+**ID:** 26427
 **University:** Adventist University of Central Africa
 **Course:** Web Technology and Internet
 **Date:** February 20, 2026
